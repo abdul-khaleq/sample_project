@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample Project</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/app/">Home</a></li>
+          <li><a href="/app/products/">Products</a></li>
+          <li><a href="/app/contact/">Contact</a></li>
+          <li><a href="/app/about/">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Home</h1>
+
+    <h1>{{ val | add:"20" }}</h1>
+    <h1>{{ fullname | addslashes }}</h1>
+    <h1>{{ name | capfirst }}</h1>
+    <h1>{{ name | center:"15" }}</h1>
+    <h1>{{ name | cut:" " }}</h1>
+    <h1>{{ date | date:"D d M Y" }}</h1>
+    <h1>{{ empty | default:"It is an empty string" }}</h1>
+    <h1>{{ dic | dictsort:"name" }}</h1>
+    <p>divisibleby It returns True if the value is divisible by the argument</p>
+    <h1>{{ number | divisibleby:"3" }}</h1>
+    <p>
+      filesizeformat It is used to format the value like a 'human-readable' file
+      size
+    </p>
+    <h1>{{ size | filesizeformat }}</h1>
+    <p>first It is used to return the first item in a list</p>
+    <h1>{{ numbers | first }}</h1>
+    <p>
+      join It is used to join a list with a string, like Python’s str.join(list)
+    </p>
+    <h1>{{ numbers | join:" // " }}</h1>
+    <p>last It is used to return the last item in a list</p>
+    <h1>{{ numbers | last }}</h1>
+    <h1>{{ numbers | length }}</h1>
+
+    <p>lower It is used to converts a string into all lowercase</p>
+    <h1>{{ fullname | lower }}</h1>
+    <h1>{{ fullname | upper }}</h1>
+    <h1>{{ upname | title }}</h1>
+    <h1>{{ numbers | random }}</h1>
+    <h1>{{ numbers | slice:":3" }}</h1>
+    <h1>{{ upname | truncatechars:7 }}</h1>
+
+    <h1>{{ upname | truncatechars:7 }}</h1>
+    <h1>{{ upname | wordcount }}</h1>
+    <h1>{{ fullname | truncatewords:2 }}</h1>
+    <h1>You have {{ num_messages }} message{{ num_messages | pluralize }}</h1>
+    <h1>{{ name | make_list }}</h1>
+    <h1>"{{ name | center:"15" }}"</h1>
+    <h1>{{ name | cut:" " }}</h1>
+    <h1>{{ time | date:"D d M Y" }}</h1>
+    <h1>{{ arr | dictsort:"name" }}</h1>
+    <h1>{{ name | slugify }}</h1>
+    <h1>{{ time | time:"H:i" }}</h1>
+  </body>
+</html>
